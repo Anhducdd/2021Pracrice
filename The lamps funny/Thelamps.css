@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.body{
+    background-color: aqua;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "area1 area1"
+    "area2 area2";
+    justify-items: center;
+}
+* > ul{
+    list-style: none;
+    padding: 0;
+}
+.controlArea{
+    grid-area: area1;
+}
+
+.form{
+    width: 20px;
+    height: 10px;
+    display: inline-block;
+    position: relative;
+}
+.icon{
+    width: 11px;
+    height: 10px;
+    background-color: rgb(253, 72, 0);
+    border-radius: 50%;
+    position: absolute;
+}
+.form1{
+    background-color: black;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius:50%;
+    transition-duration: 1.4s;
+   
+}
+.icon1{
+    left: 0;
+    transition-duration: 1.4s;
+}
+.form2{
+    background-color: rgb(214, 214, 214);
+    border-bottom-right-radius: 50%;
+    border-top-right-radius:50%;
+    transition-duration: 1.4s;
+}
+
+.icon2{
+    right: 0;
+    transition-duration: 1.4s;
+}
+.controlArea .btnArea > ul > li{
+    padding:10px 20px;
+}
+.lampArea{
+    grid-area: area2;
+}
+.lampOff{
+    content:url("image/offlight.png");
+    max-width: 100px;
+    height: 200px;
+
+}
+.lampOn{
+    content:url("image/onlight.png");
+    max-width: 100px;
+    height: 200px;
+}
