@@ -25,6 +25,9 @@
 .form{
     width: 20px;
     height: 10px;
+    background-color: rgb(214, 214, 214);
+    border-bottom-right-radius: 50%;
+    border-top-right-radius:50%;
     display: inline-block;
     position: relative;
 }
@@ -33,30 +36,24 @@
     height: 10px;
     background-color: rgb(253, 72, 0);
     border-radius: 50%;
+    right: 0;
     position: absolute;
 }
 .form1{
     background-color: black;
     border-bottom-left-radius: 50%;
     border-top-left-radius:50%;
-    transition-duration: 1.4s;
+    border-bottom-right-radius: 0;
+    border-top-right-radius:0;
+
    
 }
 .icon1{
     left: 0;
-    transition-duration: 1.4s;
-}
-.form2{
-    background-color: rgb(214, 214, 214);
-    border-bottom-right-radius: 50%;
-    border-top-right-radius:50%;
-    transition-duration: 1.4s;
+    right: none;
+    transition-duration: -1.4s;
 }
 
-.icon2{
-    right: 0;
-    transition-duration: 1.4s;
-}
 .controlArea .btnArea > ul > li{
     padding:10px 20px;
 }
